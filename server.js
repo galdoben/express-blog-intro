@@ -6,6 +6,7 @@ const port = 3000;
 app.use(express.static('public'));
 
 const myFoods = require('./data/database.js');
+const counter = require('./data/database.js');
 
 app.get('/', (req, res) =>{
     res.send('Server del mio blog');
@@ -13,6 +14,7 @@ app.get('/', (req, res) =>{
 
 app.get('/bacheca', (req, res) =>{
     res.json(myFoods);
+    res.json(counter);
 })
 
 

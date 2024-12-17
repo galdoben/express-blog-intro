@@ -36,4 +36,11 @@ const foods = [
     },
 ]
 
-module.exports = foods;
+const counter = {
+    foods: `${foods.length}`
+}
+
+
+
+module.exports = {foods, counter};
+
